@@ -24,13 +24,20 @@ img {
 }
 
 .benefit-box {
-  width: 33.333%;
   box-sizing: border-box;
   display: inline-block;
   font-size: 1rem;
   padding: 5px;
-  border-right: 1px solid rgba(0,0,0,.2);
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .benefit-box {
+    width: 33.333%;
+  }
+  .benefit-box ~ .benefit-box {
+    border-left: 1px solid rgba(0,0,0,.2);
+  }
 }
 
 
