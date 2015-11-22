@@ -1,5 +1,35 @@
 /**/
+html {
+  font-size: 16px;
+}
+
+#hero {
+  background: rgba(0,0,0,.2);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
 
 #logo {
   background-image: url(/images/Bsharp-logo.png);
+}
+
+
+#benefits {
+  font-size: 0;
+}
+
+.benefit-box {
+  width: 33.333%;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 5px;
+  border-right: 1px solid rgba(0,0,0,.2);
+  text-align: center;
+}
+
+
+footer {
+  padding: 10px;
 }
