@@ -1,0 +1,47 @@
+
+
+header .intro-text {
+    padding-top: 75px;
+}
+#logo {
+    background-image: url(../img/bsharp-logo.png);
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px;
+}
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 120px;
+  }
+  
+  #logo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+  }
+}
+
+
+
+#contactFormFrame {
+  width: 100%;
+}
+
+.piano {
+  font-family: 'Sumana', serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+.studio {
+  font-family: 'Martel', serif;
+  font-weight: 200;
+  font-size: 1.85em;
+}
+.piano, .studio {
+  text-transform: uppercase;
+  font-style: normal;
+}
