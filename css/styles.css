@@ -25,6 +25,37 @@ header .intro-text {
   }
 }
 
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.intro-text .btn {
+    background-color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.5);
+}
+.intro-text .btn:hover {
+    background-color: rgba(0,0,0,.8);
+    border-color: rgba(0,0,0,.8);
+}
+
+
+
+
+.timeline>li .timeline-image.blue {
+    background-color: deepskyblue;
+}
+.timeline>li .timeline-image.green {
+    background-color: darkgreen;
+}
+.timeline>li .timeline-image.red {
+    background-color: darkred;
+}
+.timeline>li .timeline-image.yellow {
+    background-color: darkgoldenrod;
+}
+.timeline>li .timeline-image.orange {
+    background-color: darkorange;
+}
 
 
 #contactFormFrame {
