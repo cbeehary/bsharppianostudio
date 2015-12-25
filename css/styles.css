@@ -38,6 +38,26 @@ header .intro-text {
     border-color: rgba(0,0,0,.8);
 }
 
+.portfolio {
+    font-size: 20px;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+}
+.portfolio-item:nth-child(6n+1) .portfolio { background-color: deepskyblue; }
+.portfolio-item:nth-child(6n+2) .portfolio { background-color: darkgreen; }
+.portfolio-item:nth-child(6n+3) .portfolio { background-color: darkred; }
+.portfolio-item:nth-child(6n+4) .portfolio { background-color: darkgoldenrod; }
+.portfolio-item:nth-child(6n+5) .portfolio { background-color: darkorange; }
+.portfolio-item:nth-child(6n+6) .portfolio { background-color: gold; }
+
+.portfolio i {
+    color: #fff;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(0,0,0,.8);
+}
 
 
 
