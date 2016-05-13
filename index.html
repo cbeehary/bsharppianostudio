@@ -760,9 +760,10 @@
           
         form.onsubmit = function(e) {
           var data = {
+            _subject: 'BSharpPianoStudio - New Submission',
+            _gotcha: form['_gotcha'].value,
             name: form['name'].value,
             email: form['email'].value,
-            _subject: 'BSharpPianoStudio - New Submission',
             phone: form['phone'].value,
             age: form['age'].value,
             message: form['message'].value
