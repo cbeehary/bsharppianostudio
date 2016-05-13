@@ -84,6 +84,10 @@ header .intro-text {
 
 section#contact .form-group select {
     padding: 20px;
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+    color:#bbb;
 }
 
 .piano {
