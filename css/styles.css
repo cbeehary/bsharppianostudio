@@ -82,6 +82,10 @@ header .intro-text {
   width: 100%;
 }
 
+section#contact .form-group select {
+    padding: 20px;
+}
+
 .piano {
   font-family: 'Sumana', serif;
   font-weight: 700;
