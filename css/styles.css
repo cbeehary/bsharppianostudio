@@ -86,9 +86,11 @@ section#contact .form-group select {
     padding: 20px;
     height: auto;
     font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    text-transform:uppercase;
     font-weight:700;
     color:#bbb;
+}
+section#contact select option ~ option {
+    color:#000;
 }
 
 .piano {
