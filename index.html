@@ -765,10 +765,12 @@
             url: endpoint, 
             method: "POST",
             data: data,
-            dataType: "json"
+            dataType: "json",
+            success: function(e) {
+              alert('Thank you!');
+            }
           });
           
-          alert('Thank you!')
           return false;
         }
       })(document.forms['contactForm']);
