@@ -107,3 +107,7 @@ section#contact select option ~ option {
   text-transform: uppercase;
   font-style: normal;
 }
+
+section h3.section-subheading {
+    margin-bottom: 25px;
+}
