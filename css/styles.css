@@ -45,10 +45,10 @@ header .intro-text {
     text-align: center;
     padding-top: 12px;
 }
-.portfolio-item:nth-child(6n+1) .portfolio { background-color: #95BD25; }
-.portfolio-item:nth-child(6n+2) .portfolio { background-color: gold; }
+.portfolio-item:nth-child(6n+1) .portfolio { background-color: darkred; }
+.portfolio-item:nth-child(6n+2) .portfolio { background-color: green; }
 .portfolio-item:nth-child(6n+3) .portfolio { background-color: darkorange; }
-.portfolio-item:nth-child(6n+4) .portfolio { background-color: palevioletred; }
+.portfolio-item:nth-child(6n+4) .portfolio { background-color: lightcoral; }
 .portfolio-item:nth-child(6n+5) .portfolio { background-color: deepskyblue; }
 .portfolio-item:nth-child(6n+6) .portfolio { background-color: gold; }
 
