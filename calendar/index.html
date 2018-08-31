@@ -45,11 +45,11 @@
     
     <script>
       var isMobile = window.innerWidth < 600;
-      var embedMods = isMobile ? "mode=AGENDA&amp;showDate=0&amp;" : "";
+      var embedMods = isMobile ? "mode=AGENDA&showDate=0&" : "";
       var src = ["https://calendar.google.com/calendar/embed?",
                  embedMods,
-                 "showTitle=0&amp;showPrint=0&amp;showTz=0&amp;wkst=1&amp;bgcolor=%23ffffff&amp;",
-                 "src=36gddrvld30nth3qi7ujsevjh8%40group.calendar.google.com&amp;color=%238D6F47&amp;src=3h247qqqam4e48217mstc9snm8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=America%2FNew_York"
+                 "showTitle=0&showPrint=0&showTz=0&wkst=1&bgcolor=%23ffffff&",
+                 "src=36gddrvld30nth3qi7ujsevjh8%40group.calendar.google.com&color=%238D6F47&src=3h247qqqam4e48217mstc9snm8%40group.calendar.google.com&color=%235229A3&ctz=America%2FNew_York"
                 ].join("");
       document.getElementById("calendar").src = src;
     </script>
