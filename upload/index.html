@@ -158,17 +158,25 @@
           viewAlbum(albumName);
         });
       }
+      
+      function addVideo(albumName) {
+        addPhoto(albumName);
+      }
     
     </script>
     <script>
        function getHtml(template) {
           return template.join('\n');
        }
-       listAlbums();
+       //listAlbums();
     </script>
   </head>
   <body>
     <h1>My Photo Albums App</h1>
     <div id="app"></div>
+    <div id="upload">
+      <input id="videoupload" type="file" accept="video/*">
+      <button id="addvideo" onclick="addVideo('2018-Fall')">Upload Video</button>
+    </div>
   </body>
 </html>
