@@ -527,12 +527,15 @@
     <!-- contact form submit -->
     <script>
       (function(form) {
-        var endpoint = ['https://', 'formspree.io/', 'christina', '.', 'bihary', '+', 'bsharp', '@', 'gmail.com'].join('');
+        var endpoint = ['https://', 'formsubmit', '.co/', 'ajax/', '06bf8b7a99c4de9b7b68c394cba6f777'].join('');
           
         form.onsubmit = function(e) {
+          $('button[type=submit]').text('Sending...').prop('disabled', true);
+
           var data = {
             _subject: 'BSharpPianoStudio - New Submission',
             _gotcha: form['_gotcha'].value,
+            _replyto: form['email'].value,
             name: form['name'].value,
             email: form['email'].value,
             phone: form['phone'].value,
@@ -546,9 +549,20 @@
             method: "POST",
             data: data,
             dataType: "json",
-            success: function(e) {
+            success: function(data) {
+              if (data.success && data.success !== 'false') {
+                $('#success').show();
+                $('button[type=submit]').hide();
+              } else {
+                $('button[type=submit]').text('Send Message').prop('disabled', false);
+                $('#success h3').text('Apologies, your message could not be sent.');
+                $('#success').show();
+              }              
+            },
+            error: function(e) {
+              $('button[type=submit]').text('Send Message').prop('disabled', false);
+              $('#success h3').text('Apologies, your message could not be sent.');
               $('#success').show();
-              $('button[type=submit]').hide();
             }
           });
           
